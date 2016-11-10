@@ -6,7 +6,7 @@ boilerplate for mongodb with auto username/password setup
 var path = require('path');
 var workingDir = process.cwd();
 module.exports = {
-    mongo:{
+    mongodb:{
         version: '3.2.10', //your mongodb version
         dataDir: path.join(workingDir, './data'),
         mongoDir: path.join(workingDir, './mongo'),
@@ -28,9 +28,12 @@ mongo
        GNU-AGPL-3.0
        ...
 ```
+add `quick-db` (and `quick-db-build`) 
+```
+```
 
 
 start mongo.
 ```
-npm run start
+npm run quick-db
 ```
