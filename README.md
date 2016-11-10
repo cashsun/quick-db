@@ -28,12 +28,21 @@ mongo
        GNU-AGPL-3.0
        ...
 ```
-add `quick-db` (and `quick-db-build`) 
-```
+add `quick-db` (and `quick-db-build` if you want to deploy your mongo instance) in your `package.json`
+```json
+"scripts":{
+    "quick-db":"quick-db",
+    "build-quick-db": "build-quick-db"
+}
 ```
 
 
-start mongo.
+start mongo
 ```
 npm run quick-db
+```
+
+build your mongo instance
+```
+npm run build-quick-db --version 1.0
 ```
