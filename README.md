@@ -20,6 +20,10 @@ module.exports = {
 
 unzip compatible mongo in your mongo folder under version subfolder
 ```
+client
+   ...
+server
+   ...
 config
    - default.js
 mongo
