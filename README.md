@@ -17,10 +17,18 @@ module.exports = {
 ```
 
 unzip compatible mongo in your mongo folder under version subfolder
- config
-   default.js
- mongo
-    -3.2.10
-        -bin
-        GNU-AGPL-3.0
-        ...
+```
+config
+   - default.js
+mongo
+   - 3.2.10
+       - bin
+       GNU-AGPL-3.0
+       ...
+```
+
+
+start mongo.
+```
+npm run start
+```
