@@ -1,7 +1,7 @@
 # quick-db
 boilerplate for mongodb with auto username/password setup
 
-`config` folder under working dir. add `default.js` (or [NODE_ENV].js)
+create a `config` folder under working dir. add `default.js` (or [NODE_ENV].js)
 ```javascript
 var path = require('path');
 var workingDir = process.cwd();
