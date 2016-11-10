@@ -6,13 +6,15 @@ boilerplate for mongodb with auto username/password setup
 var path = require('path');
 var workingDir = process.cwd();
 module.exports = {
-    version: '3.2.10', //your mongodb version
-    dataDir: path.join(workingDir, './data'),
-    mongoDir: path.join(workingDir, './mongo'),
-    port: 27017,
-    db:'myApp',
-    username: 'myapp_user',
-    password:'myapp_password'
+    mongo:{
+        version: '3.2.10', //your mongodb version
+        dataDir: path.join(workingDir, './data'),
+        mongoDir: path.join(workingDir, './mongo'),
+        port: 27017,
+        db:'myApp',
+        username: 'myapp_user',
+        password:'myapp_password'
+    }
 };
 ```
 
