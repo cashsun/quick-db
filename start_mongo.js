@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var spawn = require('child_process').spawn;
 var config = require('config').mongodb;
 var fs = require('fs');

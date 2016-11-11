@@ -3,9 +3,9 @@
     "node": "6.4.0",
     "npm": "3.10.3"
   },
-  "name": "hanabi-db",
-  "version": "1.0.0",
-  "description": "amazon mongo db instance for hanabi",
+  "name": "quick-db",
+  "version": "1.0.2",
+  "description": "mongo db quick instance template with config",
   "main": "index.js",
   "scripts": {
     "start": "node ./start_mongo.js",
