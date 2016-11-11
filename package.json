@@ -12,8 +12,7 @@
     "build": "node ./build.js"
   },
   "bin": {
-    "quick-db": "./start_mongo.js",
-    "build-quick-db": "./build.js"
+    "quick-db": "./start_mongo.js"
   },
   "repository": {
     "type": "git",

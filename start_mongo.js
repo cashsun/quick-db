@@ -29,7 +29,7 @@ makeSureDataDirExist().then(function (path) {
     mongod.stdout.on('data', function (data) {
 
         process.stdout.write(data);
-        if(/waiting for connections on port/.test(data)){
+        if (/waiting for connections on port/.test(data)) {
             setup_users();
         }
     });
@@ -47,6 +47,11 @@ makeSureDataDirExist().then(function (path) {
         console.log(err);
     });
 
+    process.on('uncaughtException', function (err) {
+        console.error('Uncaught exception:', err);
+        process.exit();
+    });
+
     process.on('exit', function () {
         mongod.kill();
     });
@@ -54,5 +59,6 @@ makeSureDataDirExist().then(function (path) {
     //catches ctrl+c event
     process.on('SIGINT', function () {
         mongod.kill();
+        process.exit();
     });
 });
