@@ -4,11 +4,12 @@
     "npm": "3.10.3"
   },
   "name": "quick-db",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "mongo db quick instance template with config",
   "main": "index.js",
   "scripts": {
-    "start": "node ./start_mongo.js",
+    "start": "export NODE_ENV=prod && node ./start_mongo.js",
+    "start-dev": "node ./start_mongo.js",
     "build": "node ./build.js"
   },
   "bin": {

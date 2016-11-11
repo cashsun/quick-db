@@ -12,8 +12,15 @@ module.exports = {
         mongoDir: path.join(workingDir, './mongo'),
         port: 27017,
         db:'myApp',
-        username: 'myapp_user',
-        password:'myapp_password'
+        users:[
+            {
+                username: 'myapp_user',
+                password:'myapp_password',
+                roles:[
+                    'readWrite'
+                ]
+            }
+        ]
     }
 };
 ```
