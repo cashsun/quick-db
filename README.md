@@ -45,3 +45,9 @@ start mongo
 npm run quick-db
 ```
 
+
+
+if you git clone the module separately, you can build a mongo instance ready for deploy
+```
+npm run build -- --version [version]
+```
