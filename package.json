@@ -4,7 +4,7 @@
     "npm": "3.10.3"
   },
   "name": "quick-db",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "mongo db quick instance template with config",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://cashsun@bitbucket.org/cashsun/hanabi-db.git"
+    "url": "https://github.com/cashsun/quick-db"
   },
   "keywords": [
     "mongo",
@@ -25,7 +25,7 @@
   ],
   "author": "Cash Sun",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/cashsun/hanabi-db#readme",
+  "homepage": "https://github.com/cashsun/quick-db/blob/master/README.md",
   "dependencies": {
     "archiver": "^1.2.0",
     "bluebird": "^3.4.6",
